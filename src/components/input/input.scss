@@ -1,0 +1,48 @@
+.input {
+    background-color: red;
+    //width: 300px;
+    //display: flex;
+    position: relative;
+    margin-bottom: 1.25em;
+    
+    input {
+        height: 3em;
+        border: 0;
+        border-bottom: 1px solid #90A4AE;
+        outline: none;
+        background-color: #EEEEEE;
+        padding-top: .75em;
+
+        &:focus {
+            background-color: #E0E0E0;
+            border-bottom: 1px solid #2962FF;
+
+            + label {
+                color: #2962FF;
+            }
+        }
+
+        &:focus, &:not(:placeholder-shown) {
+            align-self: flex-end;
+
+            + label {
+                padding-top: 0;
+                font-size: .75em;
+            }
+        }
+    }
+
+    label {
+        position: absolute;
+        top: 0;
+        //left: 0;
+        padding-top: 1.1em;
+        transition: all .3s;
+        //background-color: green;
+    }
+
+    input, label {
+        width: 100%;
+        padding-left: .5em;
+    }
+}

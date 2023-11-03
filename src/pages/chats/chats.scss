@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.messenger {
+    display: flex;
+    //background-color: red;
+    height: 100%;
+
+    .messenger__list {
+        flex-grow: .3;
+        background-color: green;
+    }
+
+    .messenger__chat {
+        flex-grow: .7;
+        background-color: red;
+    }
+}
+
+.messenger__header {
+    display: flex;
+    
+}
