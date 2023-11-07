@@ -1,0 +1,11 @@
+.chat-card {
+    display: flex;
+    flex-direction: column;
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
