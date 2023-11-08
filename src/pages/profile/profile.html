@@ -1,33 +1,25 @@
-<!doctype html>
-<html lang="ru">
+{{#> page/page title="Профиль"}}
+    <form class="profile-form">
+        {{#> card/card}}
+            <div class="profile-form__card__header">
+                {{> avatar/avatar src="/assets/img/account_circle_black_24dp.svg" size="130px" }}
+                <div class="logout-icon">
+                    {{> avatar/avatar src="/assets/img/logout_FILL0_wght400_GRAD0_opsz24.svg" size="50px" }}
+                </div>           
+                <h3>Вы</h3>
+            </div>
+            {{> input/input type="email" name="email" placeholder="Почта" }}
+            {{> input/input type="text" name="login" placeholder="Логин" }}
+            {{> input/input type="text" name="first_name" placeholder="Имя" }}
+            {{> input/input type="text" name="second_name" placeholder="Фамилия" }}
+            {{> input/input type="text" name="display_name" placeholder="Имя в чате" }}
+            {{> input/input type="tel" name="phone" placeholder="Телефон" }}
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Профиль</title>
-    <link rel="stylesheet" href="/styles.scss" />
-</head>
-
-<body>
-    <main>
-        <form class="profile-form">
-            {{#> card/card}}
-                <h1 class="profile-form_card_header">Профиль</h1>
-                {{> input/input type="email" name="email" placeholder="Почта" }}
-                {{> input/input type="text" name="login" placeholder="Логин" }}
-                {{> input/input type="text" name="first_name" placeholder="Имя" }}
-                {{> input/input type="text" name="second_name" placeholder="Фамилия" }}
-                {{> input/input type="text" name="display_name" placeholder="Имя в чате" }}
-                {{> input/input type="tel" name="phone" placeholder="Телефон" }}
-
-                {{> button/button label="Сменить пароль" }}
-                <div class="profile-form_buttons">
-                    {{> button/button label="Назад" }}
-                    {{> button/button label="Сохранить" primary="true" }}
-                </div>
-            {{/ card/card}}
-        </form>
-    </main>
-</body>
-
-</html>
+            {{> button/button label="Сменить пароль" }}
+            <div class="profile-form__buttons">
+                {{> button/button label="Назад" }}
+                {{> button/button label="Сохранить" primary="true" }}
+            </div>
+        {{/ card/card}}
+    </form>
+{{/ page/page}}
