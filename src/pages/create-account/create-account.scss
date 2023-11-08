@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #EFE5FD;
+}
+
+.account-form {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+
+    .account-form_card_header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .account-form_buttons {
+        margin-top: 70px;
+    }
+}

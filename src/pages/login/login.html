@@ -1,20 +1,27 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="/src/styles.scss" />
-  </head>
-  <body>
-    <div class="login-page">
-        {{#> card/card}}
-            <h1>Welcome</h1>
-            {{> input/input type="email" placeholder="Email" }}
-            {{> input/input type="password" placeholder="Password" }}
-            {{> button/button label="Sign in" }}
-        {{/ card/card}}
-    </div>
-  </body>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вход</title>
+  <link rel="stylesheet" href="/styles.scss" />
+</head>
+
+<body>
+  <main>
+    <form class="login-form">
+      {{#> card/card}}
+        <h1 class="login-form_card_header">Messenger</h1>
+        {{> input/input type="text" name="login" placeholder="Логин" }}
+        {{> input/input type="password" name="password" placeholder="Пароль" }}
+        <div class="login-form_buttons">
+          {{> button/button label="Войти" primary="true" }}
+          {{> button/button label="Нет аккаунта?" }}
+        </div>
+      {{/ card/card}}
+    </form>
+  </main>
+</body>
+
 </html>

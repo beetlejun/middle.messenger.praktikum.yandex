@@ -1,6 +1,21 @@
-.login-page {
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.login-form {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
+
+  .login-form_card_header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .login-form_buttons {
+    margin-top: 70px;
+  }
 }
