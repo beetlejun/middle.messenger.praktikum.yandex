@@ -18,7 +18,9 @@ export default {
         "index": resolve(__dirname, 'src/index.html'),
         "login": resolve(__dirname, 'src/pages/login/login.html'),
         "create-account": resolve(__dirname, 'src/pages/create-account/create-account.html'),
-        "profile": resolve(__dirname, 'src/pages/profile/profile.html')
+        "profile": resolve(__dirname, 'src/pages/profile/profile.html'),
+        "404": resolve(__dirname, 'src/pages/404.html'),
+        "500": resolve(__dirname, 'src/pages/500.html')
       }
     }
   },
