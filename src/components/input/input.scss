@@ -1,0 +1,47 @@
+.input {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+
+    input {
+        font-size: 20px;
+        padding: 16px 15px 5px 15px;
+        border-radius: 10px;
+        border: 0;
+        outline: none;
+        background-color: #EEEEEE;
+
+        &:focus {
+            background-color: #E0E0E0;
+
+            +label {
+                color: #2962FF;
+            }
+        }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            align-self: flex-end;
+
+            +label {
+                padding-top: 0;
+                font-size: 15px;
+            }
+        }
+    }
+
+    label {
+        position: absolute;
+        top: 0;
+        font-size: 14pt;
+        padding-left: 15px;
+        padding-top: 10px;
+        transition: all .3s;
+        pointer-events: none;
+    }
+
+    input,
+    label {
+        width: 100%;
+    }
+}

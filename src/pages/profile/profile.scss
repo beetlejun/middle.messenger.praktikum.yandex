@@ -1,0 +1,21 @@
+.profile-form {
+    position: relative;
+
+    .profile-form__card__header {
+        text-align: center;
+        margin-bottom: 40px;
+
+        .logout-icon {
+            position: absolute;
+            left: 260px;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .profile-form__buttons {
+        display: flex;
+        margin-top: 70px;
+    }
+}
